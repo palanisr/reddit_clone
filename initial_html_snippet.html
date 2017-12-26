@@ -19,12 +19,8 @@
 
 <main class="container">
 
-    <div class="pull-right" ng-hide="tab">
-        <p><a class="btn btn-info" ng-click="setTab(true)">New Post</a></p>
-    </div>
-
-    <div class="pull-right" ng-show="tab">
-        <p><a class="btn btn-info" ng-click="setTab(false)">View Post</a></p>
+    <div class="pull-right">
+        <p><a class="btn btn-info">New Post</a></p>
     </div>
 
     <ul class="nav nav-pills">
@@ -44,7 +40,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <form ng-show="tab">
+            <form>
                 <div>
                     <label for="title">Title</label>
                     <input id="title" class="form-control">
@@ -72,7 +68,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-12" ng-hide="tab">
+        <div class="col-md-12">
 
             <div class="well">
                 <div class="media-left">
